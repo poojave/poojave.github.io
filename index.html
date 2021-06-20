@@ -15,101 +15,110 @@
         gtag('js', new Date());
 
         gtag('config', 'G-0GG8WRH0YX');
+        var mainContent = document.getElementsByClassName("content");
+        var headIndex = 2;
+
+        function change() {
+            if (headIndex > 3) headIndex = 1;
+            mainContent[0].innerHTML = document.getElementsByClassName("part" + headIndex)[0].innerHTML;
+            headIndex++;
+        }
+
+        setInterval(change, 3000);
     </script>
 </head>
 
 <body>
-    <section id="hero" class="jumbotron">
-        <div class="container">
-            <div class="profile">
-                <img class="email-icon" src="images/poojave.jpeg">
-            </div>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="content">
+        <section id="one" class="jumbotron part1">
+            <h1>
+                Hi 👋🏼, I'm <span class="emphasis">Pooja Verma</span>.
+                <br /> & <br />
+                I am <span class="emphasis">thrilled</span> to host you.
+            </h1>
+        </section>
 
-            <div class="intro">
-                <h1 class="react-reveal hero-title"
-                    style="animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 500ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-942836215089441-4;">
-                    Hi, my name is
-                    <span class="text-color-main">POOJA VERMA</span><br>I'm thrilled to host you.</h1>
-                <p class="react-reveal hero-cta"
-                    style="animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 1000ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-942836215089441-4;">
-                    <span class="cta-btn cta-btn--hero"><a>Know more</a></span></p>
-            </div>
-        </div>
+    </div>
+
+    <section id="one" class="jumbotron part1" style="display: none;">
+        <h1>
+            Hi 👋🏼, I'm <span class="emphasis">Pooja Verma</span>.
+            <br /> & <br />
+            I am <span class="emphasis">thrilled</span> to host you.
+        </h1>
     </section>
 
-    <section id="about">
-        <div class="box">
-            <h2 class="react-reveal section-title"
-                style="animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 300ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-81223077617939-2;">
-                About Me</h2>
-            <div class="about-wrapper row">
-                <div class="col-md-6 col-sm-12">
-                    <div class="react-reveal about-wrapper__info"
-                        style="animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 1000ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-81223077617939-4;">
-                        <p class="about-wrapper__info-text">I am interested in Yoga, Books, Cooking, Chess, Tech,
-                            Meditation, Science & Finance.</p>
-                        <p></p>
-                        <p class="about-wrapper__info-text">Want to know more about me? Awesome!</p>
-                        <p></p>
-                        <p></p>
-                        <p class="react-reveal hero-cta"
-                            style="animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 1000ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-942836215089441-4;">
-                            <span class="d-flex mt-3 cta-btn cta-btn--resume"><a>Let's Talk</a></span></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section id="two" class="jumbotron part2" style="display: none;">
+        <h1>
+            I am interested in Yoga, Books, Cooking, Chess, Tech, Meditation, Science & Finance.
+            <br /> <br /> Want to say Hello?
+        </h1>
     </section>
 
-    <footer class="footer navbar-static-bottom">
-        <div class="box"><span class="back-to-top"><a><i class="fa fa-angle-up fa-2x" aria-hidden="true"></i></a></span>
-            <div class="social-links">
+    <section id="three" class="jumbotron part3" style="display: none;">
+        <div class="grid">
+            <div class="grid-item">
                 <a href="https://www.linkedin.com/in/pooja-verma/" rel="noopener noreferrer" target="_blank"
                     aria-label="twitter">
-                    <img class="email-icon" src="images/linkedin.png">
+                    Twitter
                 </a>
-                <a href="https://medium.com/@pooja__verma" rel="noopener noreferrer" target="_blank"
-                    aria-label="github">
-                    <img class="email-icon" src="images/medium.gif">
-                </a>
-                <a href="https://www.quora.com/profile/Pooja-Verma-185" rel="noopener noreferrer" target="_blank"
-                    aria-label="codepen">
-                    <img class="email-icon" src="images/quora.png">
-                </a>
-                <a href="https://twitter.com/Pooja__Verma" rel="noopener noreferrer" target="_blank"
-                    aria-label="linkedin">
-                    <img class="email-icon" src="images/twitter.gif">
-                </a>
-                <a href="https://www.instagram.com/pooja____verma/" rel="noopener noreferrer" target="_blank"
-                    aria-label="github">
-                    <img class="email-icon" src="images/instagram.gif">
-                </a>
-                <a href="https://m.facebook.com/poojaverma2305" rel="noopener noreferrer" target="_blank"
-                    aria-label="github">
-                    <img class="email-icon" src="images/facebook.gif">
-                </a>
-                <a href="https://www.youtube.com/channel/UCMecuQmbsly4ql-2gerUjYg/playlists" rel="noopener noreferrer"
-                    target="_blank" aria-label="github">
-                    <img class="email-icon" src="images/youtube.gif">
-                </a>
-                <a href="mailto:poojapooja.verma90@gmail.com" rel="noopener noreferrer" target="_blank"
-                    aria-label="github">
-                    <img class="email-icon" src="images/gmail.gif">
-                </a>
-                <a href="https://github.com/poojave" rel="noopener noreferrer" target="_blank" aria-label="github">
-                    <img class="email-icon" src="images/github.png">
-                </a>
-                <a href="https://in.pinterest.com/poojapoojaverma90/" rel="noopener noreferrer" target="_blank"
-                    aria-label="github">
-                    <img class="email-icon" src="images/pinterest.gif">
-                </a>
-
             </div>
-            <hr>
-
-            <p class="footer__text">© 2021 | Pooja Verma</p>
+            <div class="grid-item">
+                <a href="https://medium.com/@pooja__verma" rel="noopener noreferrer" target="_blank"
+                    aria-label="medium">
+                    Medium
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="https://www.quora.com/profile/Pooja-Verma-185" rel="noopener noreferrer" target="_blank"
+                    aria-label="quora">
+                    Quora
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="https://twitter.com/Pooja__Verma" rel="noopener noreferrer" target="_blank"
+                    aria-label="twitter">
+                    Linkedin
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="https://www.instagram.com/pooja____verma/" rel="noopener noreferrer" target="_blank"
+                    aria-label="instagram">
+                    Instagram
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="https://m.facebook.com/poojaverma2305" rel="noopener noreferrer" target="_blank"
+                    aria-label="facebook">
+                    Facebook
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="https://www.youtube.com/channel/UCMecuQmbsly4ql-2gerUjYg/playlists" rel="noopener noreferrer"
+                    target="_blank" aria-label="youtube">
+                    Youtube
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="mailto:poojapooja.verma90@gmail.com" rel="noopener noreferrer" target="_blank"
+                    aria-label="gmail">
+                    Gmail
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="	https://stackoverflow.com/users/story/7562623" rel="noopener noreferrer" target="_blank"
+                    aria-label="stackoverflow">
+                    Stackoverflow
+                </a>
+            </div>
         </div>
-    </footer>
+        <hr>
+
+        <p class="footer__text">© 2021 | Pooja Verma</p>
+    </section>
 
 </body>
 
